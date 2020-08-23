@@ -22,6 +22,8 @@ public class UserRegistrationController {
 
     @PostMapping("/register/seller")
     public String registerAsSeller(@RequestBody SellerDto sellerDto) {
+    	
+    	System.out.println("HELLO ANKIT-DEV-COLLABLE");
         return userRegistrationService.registerSeller(sellerDto);
     }
 
